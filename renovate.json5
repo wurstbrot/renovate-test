@@ -5,53 +5,5 @@
   // Basic settings
   "extends": [
     "config:base"
-  ],
-  
-  // Autodiscovery filter for specific repository
-  "autodiscoverFilter": ["wurstbrot/renovate-test"],
-  
-  // Update schedule
-  "schedule": ["before 4am on Monday"],
-  
-  // Package managers to enable
-  "enabledManagers": [
-    "maven",
-    "npm",
-    "docker",
-    "dockerfile"
-  ],
-  
-  // Auto-merge configuration
-  "automerge": false,
-  "platformAutomerge": false,
-  
-  // PR settings
-  "prConcurrentLimit": 5,
-  "prHourlyLimit": 2,
-  
-  // Vulnerability alerts
-  "vulnerabilityAlerts": {
-    "enabled": true
-  },
-  
-  // Security updates
-  "osvVulnerabilityAlerts": true,
-  
-  // Grouping rules
-  "packageRules": [
-    {
-      "groupName": "log4j security updates",
-      "matchPackageNames": ["org.apache.logging.log4j:log4j-core", "org.apache.logging.log4j:log4j-api"],
-      "addLabels": ["security", "log4j"]
-    }
-  ],
-  
-  // Labels
-  "labels": ["dependencies"],
-  
-  // Commit message customization
-  "commitMessagePrefix": "chore(deps): ",
-  
-  // Logging
-  "logLevel": "info"
+  ]
 }
